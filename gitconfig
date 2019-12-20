@@ -12,6 +12,7 @@
 [core]
   pager = less -FRSX
 	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+  excludesfile = ~/.gitignore_global
 
 [alias]
   co = checkout
@@ -46,6 +47,7 @@
 
 [branch "master"]
   mergeoptions = --no-edit
+
 [user]
 	email = gregoire.tignol@gmail.com
 	name = Gregoire Tignol
