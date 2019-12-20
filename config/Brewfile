@@ -1,0 +1,30 @@
+cask_args appdir: "/Applications"
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+
+brew "mackup"
+
+cask "alfred"
+cask "coconutbattery"
+cask "dropbox"
+cask "evernote"
+cask "flux"
+cask "google-chrome"
+cask "nordvpn"
+cask "skype"
+cask "slack"
+cask "spotify"
+cask "stretchly"
+cask "the-unarchiver"
+cask "transmission"
+cask "tripmode"
+cask "vlc"
+cask "zotero"
+
+mas "Noizio", id: 928871589
+mas "Things", id: 904280696
+mas "Tim", id: 1449619230
+mas "GhosteryLite", id: 1436953057
