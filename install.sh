@@ -62,16 +62,4 @@ ln -s $PWD/SublimeLinter.sublime-settings $SUBL_PATH/Packages/User/SublimeLinter
 
 zsh ~/.zshrc
 
-# Custom .sh files (Gregoire edit)
-zsh $PWD/kb-shortcuts.sh
-zsh $PWD/macos.sh
-
-# Install Brewfile apps (Gregoire edit)
-brew bundle --no-lock --file="$PWD/config/Brewfile"
-
-# Restore Mackup backups (Gregoire edit)
-ln -s $PWD/config/backup/mackup.cfg $HOME/.mackup.cfg
-ln -s $PWD/config/backup/mackup $HOME/.mackup
-mackup restore
-
 echo "👌  Carry on with git setup!"

@@ -23,6 +23,9 @@ cask "transmission"
 cask "tripmode"
 cask "vlc"
 cask "zotero"
+cask "microsoft-excel"
+cask "microsoft-word"
+cask "microsoft-powerpoint"
 
 mas "Noizio", id: 928871589
 mas "Things", id: 904280696

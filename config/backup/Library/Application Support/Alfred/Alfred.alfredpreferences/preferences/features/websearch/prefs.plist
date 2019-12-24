@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>027407E1-3A4A-42F7-ADA7-5A2ECDD8CC8B</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wref</string>
+			<key>text</key>
+			<string>Search WordReference for '{query}'</string>
+			<key>url</key>
+			<string>https://www.wordreference.com/enfr/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>38A38535-C618-4CA3-A345-F40C5F390D07</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>cnrtl</string>
+			<key>text</key>
+			<string>Search CNRTL for synonyms of {query}</string>
+			<key>url</key>
+			<string>http://www.cnrtl.fr/synonymie/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>86EEFC62-4A8E-4BA3-B380-55674FD5BA8F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>dico</string>
+			<key>text</key>
+			<string>Search Wiktionary for '{query}'</string>
+			<key>url</key>
+			<string>https://fr.wiktionary.org/w/index.php?search={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>C7E731F9-34E9-4BD2-A134-62D5CADD4A35</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>messenger</string>
+			<key>text</key>
+			<string>Open Messenger</string>
+			<key>url</key>
+			<string>https://www.messenger.com</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>DB6C5969-ED00-489D-852B-5389AF4AAAC1</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>emoji</string>
+			<key>text</key>
+			<string>Search Emojipedia for {query}</string>
+			<key>url</key>
+			<string>https://emojipedia.org/search/?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>DD857A21-B124-4184-B809-32816DFAB794</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>exp</string>
+			<key>text</key>
+			<string>Search L'Internaute for idoms with {query}</string>
+			<key>url</key>
+			<string>https://www.linternaute.fr/dictionnaire/fr/definition/{query}/#expression</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

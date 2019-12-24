@@ -2,7 +2,15 @@
 <playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
 	<title>Médiathèque</title>
 	<trackList>
+		<track>
+			<location>file:///Users/grgggy/Downloads/Spectre%20%282015%29%20%5B1080p%5D%20%5BYTS.AG%5D/Spectre.2015.1080p.BluRay.x264-%5BYTS.AG%5D.mp4</location>
+			<duration>8886923</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>0</vlc:id>
+			</extension>
+		</track>
 	</trackList>
 	<extension application="http://www.videolan.org/vlc/playlist/0">
+		<vlc:item tid="0"/>
 	</extension>
 </playlist>
