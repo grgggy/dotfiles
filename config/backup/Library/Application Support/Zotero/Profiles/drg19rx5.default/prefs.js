@@ -10,8 +10,8 @@
 // - set it within a user.js file in your profile.
 
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1576843121);
-user_pref("app.update.lastUpdateTime.background-update-timer", 1576591009);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1576590889);
+user_pref("app.update.lastUpdateTime.background-update-timer", 1578219148);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1578219028);
 user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1576843076);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1576591129);
 user_pref("browser.cache.disk.capacity", 358400);
@@ -32,22 +32,23 @@ user_pref("extensions.zotero.ignoreLegacyDataDir.auto", true);
 user_pref("extensions.zotero.import.createNewCollection.fromFileOpenHandler", false);
 user_pref("extensions.zotero.lastAbstractExpand", false);
 user_pref("extensions.zotero.lastRenameAssociatedFile", true);
-user_pref("extensions.zotero.lastViewedFolder", "C8");
+user_pref("extensions.zotero.lastViewedFolder", "C6");
 user_pref("extensions.zotero.pane.persist", "{\"zotero-collections-pane\":{},\"zotero-tags-splitter\":{},\"zotero-tag-selector-container\":{},\"zotero-collections-splitter\":{},\"zotero-layout-switcher\":{\"orient\":\"horizontal\"},\"zotero-items-pane\":{},\"zotero-items-tree\":{\"current-view-group\":\"default\"},\"zotero-items-column-title\":{\"ordinal\":\"1\",\"hidden\":\"false\"},\"zotero-items-column-firstCreator\":{\"ordinal\":\"3\",\"hidden\":\"false\"},\"zotero-items-column-itemType\":{\"width\":\"40\",\"ordinal\":\"5\",\"hidden\":\"true\"},\"zotero-items-column-date\":{\"ordinal\":\"7\",\"hidden\":\"true\"},\"zotero-items-column-year\":{\"ordinal\":\"9\",\"hidden\":\"true\"},\"zotero-items-column-publisher\":{\"ordinal\":\"11\",\"hidden\":\"true\"},\"zotero-items-column-publicationTitle\":{\"ordinal\":\"13\",\"hidden\":\"true\"},\"zotero-items-column-journalAbbreviation\":{\"ordinal\":\"15\",\"hidden\":\"true\"},\"zotero-items-column-language\":{\"ordinal\":\"17\",\"hidden\":\"true\"},\"zotero-items-column-accessDate\":{\"ordinal\":\"19\",\"hidden\":\"true\"},\"zotero-items-column-libraryCatalog\":{\"ordinal\":\"21\",\"hidden\":\"true\"},\"zotero-items-column-callNumber\":{\"ordinal\":\"23\",\"hidden\":\"true\"},\"zotero-items-column-rights\":{\"ordinal\":\"25\",\"hidden\":\"true\"},\"zotero-items-column-dateAdded\":{\"ordinal\":\"27\",\"hidden\":\"true\"},\"zotero-items-column-dateModified\":{\"ordinal\":\"29\",\"hidden\":\"true\"},\"zotero-items-column-archive\":{\"ordinal\":\"31\",\"hidden\":\"true\"},\"zotero-items-column-archiveLocation\":{\"ordinal\":\"33\",\"hidden\":\"true\"},\"zotero-items-column-place\":{\"ordinal\":\"35\",\"hidden\":\"true\"},\"zotero-items-column-volume\":{\"ordinal\":\"37\",\"hidden\":\"true\"},\"zotero-items-column-edition\":{\"ordinal\":\"39\",\"hidden\":\"true\"},\"zotero-items-column-pages\":{\"ordinal\":\"41\",\"hidden\":\"true\"},\"zotero-items-column-issue\":{\"ordinal\":\"43\",\"hidden\":\"true\"},\"zotero-items-column-series\":{\"ordinal\":\"45\",\"hidden\":\"true\"},\"zotero-items-column-seriesTitle\":{\"ordinal\":\"47\",\"hidden\":\"true\"},\"zotero-items-column-court\":{\"ordinal\":\"49\",\"hidden\":\"true\"},\"zotero-items-column-medium\":{\"ordinal\":\"51\",\"hidden\":\"true\"},\"zotero-items-column-genre\":{\"ordinal\":\"53\",\"hidden\":\"true\"},\"zotero-items-column-system\":{\"ordinal\":\"55\",\"hidden\":\"true\"},\"zotero-items-column-extra\":{\"ordinal\":\"57\",\"hidden\":\"true\"},\"zotero-items-column-hasAttachment\":{\"ordinal\":\"59\",\"hidden\":\"false\"},\"zotero-items-column-numNotes\":{\"ordinal\":\"61\",\"hidden\":\"true\"},\"zotero-items-splitter\":{\"orient\":\"horizontal\"},\"zotero-item-pane\":{}}");
 user_pref("extensions.zotero.prefVersion", 2);
+user_pref("extensions.zotero.purge.fulltext", true);
 user_pref("extensions.zotero.recentSaveTargets", "[{\"id\":\"C8\",\"sessionID\":\"umfklay7\"}]");
 user_pref("extensions.zotero.sourceList.persist", "{\"L1\":true,\"P1\":false,\"L2\":true,\"C2\":true}");
 user_pref("extensions.zotero.sync.server.username", "gregoire.tignol@gmail.com");
 user_pref("extensions.zotero.useDataDir", true);
 user_pref("extensions.zoteroMacWordIntegration.version", "5.0.24.SA.5.0.80");
 user_pref("gecko.handlerService.migrated", true);
-user_pref("idle.lastDailyNotification", 1576594736);
+user_pref("idle.lastDailyNotification", 1578219085);
 user_pref("intl.accept_languages", "fr, fr-fr, en-us, en");
 user_pref("media.gmp.storage.version.observed", 1);
 user_pref("network.cookie.prefsMigrated", true);
 user_pref("network.predictor.cleaned-up", true);
-user_pref("places.database.lastMaintenance", 1576594736);
+user_pref("places.database.lastMaintenance", 1578219085);
 user_pref("places.history.expiration.transient_current_max_pages", 104858);
 user_pref("signon.importedFromSqlite", true);
-user_pref("storage.vacuum.last.index", 0);
+user_pref("storage.vacuum.last.index", 1);
 user_pref("storage.vacuum.last.places.sqlite", 1576594736);

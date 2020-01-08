@@ -3774,7 +3774,7 @@ freetype-bold=1
 #network-synchronisation=0
 
 # Record directory (string)
-#input-record-path=
+input-record-path=/Users/grgggy/Movies
 
 # Prefer native stream recording (boolean)
 #input-record-native=1
