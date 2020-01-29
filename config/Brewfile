@@ -27,7 +27,6 @@ cask "the-unarchiver"
 cask "tomighty"
 cask "transmission"
 cask "tripmode"
-cask "turbo-boost-switcher"
 cask "vlc"
 cask "whatsapp"
 cask "zotero"
@@ -35,4 +34,5 @@ cask "zotero"
 mas "Noizio", id: 928871589
 mas "Things", id: 904280696
 mas "Tim", id: 1449619230
-mas "GhosteryLite", id: 1436953057
+mas "AdGuard for Safari", id: 1440147259
+mas "Instapaper", id: 1481302432
