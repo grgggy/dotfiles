@@ -9,8 +9,16 @@
 				<vlc:id>0</vlc:id>
 			</extension>
 		</track>
+		<track>
+			<location>file:///Users/grgggy/Downloads/The.Man.from.Earth.Holocene.2017.720p.BluRay.x264-UNiVEARTH/The.Man.from.Earth.Holocene.2017.720p.BluRay.x264-UNiVEARTH.mkv</location>
+			<duration>6007936</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>1</vlc:id>
+			</extension>
+		</track>
 	</trackList>
 	<extension application="http://www.videolan.org/vlc/playlist/0">
 		<vlc:item tid="0"/>
+		<vlc:item tid="1"/>
 	</extension>
 </playlist>

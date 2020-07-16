@@ -22,7 +22,7 @@
     "breakPostponableDurationPercent": 30,
     "mainColor": "#1D1F21",
     "audio": "crystal-glass",
-    "fullscreen": false,
+    "fullscreen": true,
     "ideas": false,
     "naturalBreaks": true,
     "allScreens": true,
@@ -34,7 +34,7 @@
     "posLongitude": 0,
     "useMonochromeTrayIcon": true,
     "useMonochromeInvertedTrayIcon": false,
-    "silentNotifications": false,
+    "silentNotifications": true,
     "monitorDnd": true,
     "microbreakStartSoundPlaying": false,
     "breakStartSoundPlaying": false,
@@ -209,5 +209,7 @@
             "data": "Take a moment to smile at being alive.",
             "enabled": true
         }
-    ]
+    ],
+    "volume": 1,
+    "naturalBreaksInactivityResetTime": 300000
 }

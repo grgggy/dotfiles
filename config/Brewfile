@@ -4,23 +4,20 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "beeftornado/rmtree"
 
 brew "mackup"
+brew "mas"
+brew "youtube-dl"
 
 cask "alfred"
-cask "background-music"
-cask "coconutbattery"
+# cask "background-music"
 cask "dropbox"
-cask "evernote"
-cask "flux"
 cask "microsoft-excel"
 cask "microsoft-powerpoint"
 cask "microsoft-word"
 cask "google-chrome"
 cask "mounty"
-cask "nordvpn"
-cask "skype"
-cask "slack"
 cask "spotify"
 cask "stretchly"
 cask "the-unarchiver"
@@ -29,10 +26,10 @@ cask "transmission"
 cask "tripmode"
 cask "vlc"
 cask "whatsapp"
-cask "zotero"
 
 mas "Noizio", id: 928871589
 mas "Things", id: 904280696
 mas "Tim", id: 1449619230
-mas "AdGuard for Safari", id: 1440147259
+mas "Wipr", id: 1320666476
+mas "NordVPN IKE", id: 1116599239
 mas "Instapaper", id: 1481302432

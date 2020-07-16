@@ -1,0 +1,70 @@
+{
+    "presets": [
+        {
+            "name": "A5",
+            "group": "europaper",
+            "width": 148.0,
+            "height": 210.0,
+            "units": "millimetersUnit",
+            "profile": "default",
+            "resolution": "print",
+            "scale": 1.0,
+            "fill": "white",
+            "guides": [],
+            "artboards": [],
+            "icon": "print",
+            "lastUsedTime": 1591630586237
+        },
+        {
+            "name": "Personnalisée",
+            "group": "",
+            "width": 64.99999888102214,
+            "height": 97.99999880981444,
+            "units": "millimetersUnit",
+            "profile": "none",
+            "resolution": 300.0,
+            "resolutionUnits": "inchesUnit",
+            "depth": 8,
+            "scale": 1.0,
+            "mode": "RGB",
+            "fill": "white",
+            "guides": [],
+            "artboards": [],
+            "lastUsedTime": 1591519291242
+        },
+        {
+            "name": "Personnalisée",
+            "group": "",
+            "width": 54.99999945068359,
+            "height": 87.99999937947591,
+            "units": "millimetersUnit",
+            "profile": "none",
+            "resolution": 300.0,
+            "resolutionUnits": "inchesUnit",
+            "depth": 8,
+            "scale": 1.0,
+            "mode": "RGB",
+            "fill": "white",
+            "guides": [],
+            "artboards": [],
+            "lastUsedTime": 1591519058666
+        },
+        {
+            "name": "Format Photoshop par défaut",
+            "group": "default",
+            "width": 16.002,
+            "height": 11.997266666666669,
+            "units": "centimetersUnit",
+            "profile": "default",
+            "resolution": 118.11023622047245,
+            "resolutionUnits": "centimetersUnit",
+            "depth": 8,
+            "scale": 1.0,
+            "mode": "RGB",
+            "fill": "white",
+            "guides": [],
+            "artboards": [],
+            "lastUsedTime": 1588432335699
+        }
+    ]
+}
