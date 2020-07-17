@@ -39,4 +39,4 @@ export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 
 # Pour les paquets Node installés globalement
-export PATH="${HOME}/.npm-global/bin:${PATH}"
+export PATH="${HOME}/.npm-global/bin:${PATH}"export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"

@@ -2,7 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>showContacts</key>
-	<false/>
+	<key>fallbacks</key>
+	<array>
+		<string>features.websearch.google.fallback</string>
+		<string>features.websearch.wiki.fallback</string>
+		<string>user.workflow.3ED20EE0-CFBA-4ED6-A3CA-5107ED038254.26947402-9F48-44CB-B491-E90B5997C5F6</string>
+	</array>
+	<key>fallbacksMode</key>
+	<integer>1</integer>
 </dict>
 </plist>

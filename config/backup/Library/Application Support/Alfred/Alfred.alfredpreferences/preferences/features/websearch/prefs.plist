@@ -17,6 +17,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>212EBF90-7F98-46FC-890D-C6FB1A16B400</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wm</string>
+			<key>text</key>
+			<string>Search Wayback Machine for '{query}</string>
+			<key>url</key>
+			<string>https://web.archive.org/web/*/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>38A38535-C618-4CA3-A345-F40C5F390D07</key>
 		<dict>
 			<key>enabled</key>
@@ -40,6 +53,45 @@
 			<string>Search Wiktionary for '{query}'</string>
 			<key>url</key>
 			<string>https://fr.wiktionary.org/w/index.php?search={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>8F7C49B9-1FD2-4C99-A461-4F676563D3FA</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>netflix</string>
+			<key>text</key>
+			<string>Search Netflix for '{query}'</string>
+			<key>url</key>
+			<string>https://www.netflix.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>92E2A22A-1609-40BA-A40E-5F081A6CE84F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>allo</string>
+			<key>text</key>
+			<string>Search Allociné for '{query}'</string>
+			<key>url</key>
+			<string>http://www.allocine.fr/recherche/1/?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>961501A3-3E20-4979-A25C-D2191C455FAF</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>crisco</string>
+			<key>text</key>
+			<string>Search CRISCO for synonyms of {query}</string>
+			<key>url</key>
+			<string>https://crisco2.unicaen.fr/des/synonyme/{query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>

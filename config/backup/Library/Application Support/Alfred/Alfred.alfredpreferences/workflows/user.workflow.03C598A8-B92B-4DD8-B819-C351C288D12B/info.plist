@@ -19,32 +19,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>ED63BB8B-C8D5-442F-BA82-B851D617AEFF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4D8E3444-14C2-4D0E-A8C1-AA67988AE358</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F42A4420-BA42-4AA5-A300-8048BB39CA32</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4D8E3444-14C2-4D0E-A8C1-AA67988AE358</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Sean Ballinger</string>
@@ -167,125 +141,6 @@ end alfred_script</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>keyword</key>
-				<string>a</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>on run argv
-	tell application "Notes"		set noteRefs to a reference to every note in default account
-	end tell
-	set noteNames to name of noteRefs
-
-	set output to "{\"items\":["
-	repeat with name in noteNames
-		set output to output &amp; "{\"title\":\"" &amp; name  &amp; "\",\"arg\":\"" &amp; name &amp; "\"},"
-	end repeat
-	return output &amp; "]}" 
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>searchNoteTitles.applescript</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Search Apple Notes</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>F42A4420-BA42-4AA5-A300-8048BB39CA32</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>keyword</key>
-				<string>b</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string>Searching...</string>
-				<key>script</key>
-				<string>on run argv
-	tell application "Notes"		set noteRefs to a reference to every note in default account
-		set noteNames to name of noteRefs
-		set containers to container of noteRefs
-	end tell
-
-	set output to "{\"items\":["
-	repeat with i from 1 to count of noteRefs
-		set output to output &amp; "{\"title\":\"" &amp; (item i in noteNames)  &amp; "\",\"arg\":\"" &amp; (item i in noteNames) &amp; "\",\"subtitle\": \"" &amp; (name of item i of containers) &amp; "\"},"
-	end repeat
-	return output &amp; "]}" 
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>searchNotes.applescript</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Search Notes.app</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>ED63BB8B-C8D5-442F-BA82-B851D617AEFF</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -296,9 +151,9 @@ end run</string>
 			<key>note</key>
 			<string>Show note with given ID</string>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>540</integer>
 			<key>ypos</key>
-			<integer>280</integer>
+			<integer>120</integer>
 		</dict>
 		<key>5BC84589-FA2A-459F-982A-54B612C9BA7F</key>
 		<dict>
@@ -308,24 +163,6 @@ end run</string>
 			<integer>320</integer>
 			<key>ypos</key>
 			<integer>110</integer>
-		</dict>
-		<key>ED63BB8B-C8D5-442F-BA82-B851D617AEFF</key>
-		<dict>
-			<key>note</key>
-			<string>Search titles and bodies (slowest, compatible)</string>
-			<key>xpos</key>
-			<integer>320</integer>
-			<key>ypos</key>
-			<integer>440</integer>
-		</dict>
-		<key>F42A4420-BA42-4AA5-A300-8048BB39CA32</key>
-		<dict>
-			<key>note</key>
-			<string>Search titles only (slower, compatible)</string>
-			<key>xpos</key>
-			<integer>320</integer>
-			<key>ypos</key>
-			<integer>280</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
