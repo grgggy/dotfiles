@@ -16,9 +16,25 @@
 				<vlc:id>1</vlc:id>
 			</extension>
 		</track>
+		<track>
+			<location>file:///Users/gregoiretignol/Downloads/La%20Trilogie%20Marseillaise%20de%20Marcel%20Pagnol%20%20Marius%20regarder%20et%20t%C3%A9l%C3%A9charger%20%20fCine.TV-b5fc48b400cae2a422f92974f0d6110a.ts</location>
+			<duration>7633283</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>2</vlc:id>
+			</extension>
+		</track>
+		<track>
+			<location>file:///Users/gregoiretignol/Downloads/La%20Trilogie%20Marseillaise%20de%20Marcel%20Pagnol%20%20Marius%20regarder%20et%20te%CC%81le%CC%81charger%20%20fCine.TV-b5fc48b400cae2a422f92974f0d6110a.ts</location>
+			<duration>7633283</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>3</vlc:id>
+			</extension>
+		</track>
 	</trackList>
 	<extension application="http://www.videolan.org/vlc/playlist/0">
 		<vlc:item tid="0"/>
 		<vlc:item tid="1"/>
+		<vlc:item tid="2"/>
+		<vlc:item tid="3"/>
 	</extension>
 </playlist>

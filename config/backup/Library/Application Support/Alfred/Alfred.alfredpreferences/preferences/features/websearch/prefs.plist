@@ -78,7 +78,7 @@
 			<key>text</key>
 			<string>Search Allociné for '{query}'</string>
 			<key>url</key>
-			<string>http://www.allocine.fr/recherche/1/?q={query}</string>
+			<string>https://www.allocine.fr/recherche/?q={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>

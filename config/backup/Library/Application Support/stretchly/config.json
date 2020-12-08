@@ -28,7 +28,7 @@
     "allScreens": true,
     "useIdeasFromSettings": false,
     "language": "en",
-    "notifyNewVersion": true,
+    "notifyNewVersion": false,
     "isFirstRun": false,
     "posLatitude": 0,
     "posLongitude": 0,
@@ -211,5 +211,9 @@
         }
     ],
     "volume": 1,
-    "naturalBreaksInactivityResetTime": 300000
+    "naturalBreaksInactivityResetTime": 300000,
+    "themeSource": "system",
+    "endBreakShortcut": "CmdOrCtrl+X",
+    "transparentMode": false,
+    "opacity": 0.9
 }

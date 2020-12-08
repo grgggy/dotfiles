@@ -8,5 +8,14 @@
 	<false/>
 	<key>autoExpandSnippetTriggerPlaySound</key>
 	<false/>
+	<key>hotkey</key>
+	<dict>
+		<key>key</key>
+		<integer>8</integer>
+		<key>mod</key>
+		<integer>1179648</integer>
+		<key>string</key>
+		<string>C</string>
+	</dict>
 </dict>
 </plist>

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{date:yyyy-MM-dd HH:mm}",
+    "uid" : "85414807-0408-4E42-8A37-A31F1DB6A744",
+    "name" : "Date et heure",
+    "keyword" : "fulldate"
+  }
+}

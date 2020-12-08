@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Title:       \nDate:        {date:yyyy-MM-dd HH:mm}\nKeywords:    #\n\n{cursor}\n\n--\n\nReferences:",
+    "uid" : "BD583525-F528-490B-A2D2-17028918F909",
+    "name" : "New Zettel header",
+    "keyword" : "zettel"
+  }
+}

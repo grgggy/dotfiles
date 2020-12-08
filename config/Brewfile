@@ -12,7 +12,7 @@ brew "youtube-dl"
 
 cask "alfred"
 # cask "background-music"
-cask "dropbox"
+cask "bibdesk"
 cask "microsoft-excel"
 cask "microsoft-powerpoint"
 cask "microsoft-word"
@@ -22,10 +22,12 @@ cask "spotify"
 cask "stretchly"
 cask "the-unarchiver"
 cask "tomighty"
+cask "tor-browser"
 cask "transmission"
 cask "tripmode"
 cask "vlc"
 cask "whatsapp"
+cask "zoom"
 
 mas "Noizio", id: 928871589
 mas "Things", id: 904280696
