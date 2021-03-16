@@ -1,8 +1,1 @@
-{
-   "Ifty0kmGtBkqpzyRNEJ2iccvLpOffAEtEf72UjNCr0U=": {
-      "expiry": 1632393582.88348,
-      "mode": "force-https",
-      "sts_include_subdomains": true,
-      "sts_observed": 1600857582.883489
-   }
-}
+{"expect_ct":[],"sts":[{"expiry":1647417421.919489,"host":"Ifty0kmGtBkqpzyRNEJ2iccvLpOffAEtEf72UjNCr0U=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1615881421.919502}],"version":2}

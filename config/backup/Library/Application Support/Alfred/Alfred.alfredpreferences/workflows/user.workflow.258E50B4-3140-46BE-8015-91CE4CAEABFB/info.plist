@@ -65,7 +65,7 @@
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string>Copy notes:// URL</string>
+				<string>Copy note URL</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -144,7 +144,7 @@
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string>Copy notes:// URL</string>
+				<string>Copy note URL</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -286,9 +286,10 @@ end alfred_script</string>
 				<key>runningsubtext</key>
 				<string>Getting notes...</string>
 				<key>script</key>
-				<string>search_notes/search_notes title "$@" 2&gt;&gt; error_log.txt
+				<string>wfd=$alfred_preferences/workflows/$alfred_workflow_uid
+"$wfd/search_notes/search_notes" title "$@" 2&gt;&gt; "$wfd/error_log.txt"
 if [[ $? != 0 ]]; then
-    osascript handle_error.scpt
+    osascript "$wfd/handle_error.scpt"
 fi
 </string>
 				<key>scriptargtype</key>
@@ -349,15 +350,51 @@ fi
 			<dict>
 				<key>applescript</key>
 				<string>use framework "Foundation"
-use scripting additions -- fixes errors due to previous lineproperty NSString : a reference to current application's NSString
-property NSCharacterSet : a reference to current application's NSCharacterSet
+use scripting additions
 
-on alfred_script(q)	tell application "Notes"
-		-- Get note id which is first item in q
-		set q to text 1 thru ((offset of "?" in q)-1) of q		set noteName to name of note id q in default account
-		set the clipboard to noteName		set noteName to (NSString's stringWithString:noteName)		set noteName to (noteName's stringByAddingPercentEncodingWithAllowedCharacters:(NSCharacterSet's URLPathAllowedCharacterSet)) as text
-		set noteUrl to "note://" &amp; noteName
-		set the clipboard to noteUrl	end tell
+property NSMutableAttributedString : a reference to current application's NSMutableAttributedString
+property NSNull : a reference to current application's NSNull
+property NSDate : a reference to current application's NSDate
+property NSNumber : a reference to current application's NSNumber
+property NSPasteboardTypeRTF : a reference to current application's NSPasteboardTypeRTF
+property NSRTFTextDocumentType : a reference to current application's NSRTFTextDocumentType
+property NSString : a reference to current application's NSString
+property NSUTF8StringEncoding : a reference to current application's NSUTF8StringEncoding
+property NOTE_URL_PREFIX : "shortcuts://run-shortcut?name=NoteURL&amp;input="
+
+on HTMLToClipboard(HTMLContent)
+    set HTMLBody to ("&lt;html&gt;&lt;head&gt;&lt;meta charset=\"UTF-8\" /&gt;&lt;/head&gt;&lt;body&gt;" &amp; HTMLContent &amp; "&lt;/body&gt;&lt;/html&gt;")
+    set NSStringHTMLBody to NSString's stringWithString:HTMLBody
+    set HTMLBodyData to NSStringHTMLBody's dataUsingEncoding:NSUTF8StringEncoding
+    set attributedString to NSMutableAttributedString's alloc()
+    attributedString's initWithHTML:HTMLBodyData documentAttributes:NSNull
+    set range to {0, attributedString's |length|}
+    set RTF to (attributedString's RTFFromRange:range documentAttributes:{DocumentType:NSRTFTextDocumentType})
+    set pasteboard to current application's NSPasteboard's generalPasteboard()
+    pasteboard's clearContents()
+    pasteboard's setData:RTF forType:NSPasteboardTypeRTF
+end clipTextAndHtml
+
+on getNoteURI(noteID)
+    tell application "Notes"
+        set noteCreated to (creation date) of note id noteID in default account
+        set cocoaDate to NSDate's dateWithTimeInterval:0 sinceDate:noteCreated
+        set doubleNoteTimestamp to cocoaDate's timeIntervalSince1970
+        set intNoteTimestamp to intValue of (NSNumber's numberWithDouble:doubleNoteTimestamp)
+        set stringNoteTimestamp to stringValue of (NSNumber's numberWithInt:intNoteTimestamp)
+        set URI to (my NOTE_URL_PREFIX) &amp; stringNoteTimestamp
+        return URI
+    end tell
+end getNoteURI
+
+on alfred_script(q)
+    tell application "Notes"
+        set noteID to text 1 thru ((offset of "?" in q)-1) of q
+        set URI to (my getNoteURI(noteID))
+        set noteName to name of note id noteID in default account
+        set HTMLLink to "&lt;a href=\"" &amp; URI &amp; "\"&gt;" &amp; noteName &amp; "&lt;/a&gt;"
+    end tell
+    my HTMLToClipboard(HTMLLink)
 end alfred_script</string>
 				<key>cachescript</key>
 				<true/>
@@ -397,9 +434,10 @@ end alfred_script</string>
 				<key>runningsubtext</key>
 				<string>Getting notes...</string>
 				<key>script</key>
-				<string>search_notes/search_notes body "$@" 2&gt;&gt; error_log.txt
+				<string>wfd=$alfred_preferences/workflows/$alfred_workflow_uid
+"$wfd/search_notes/search_notes" body "$@" 2&gt;&gt; "$wfd/error_log.txt"
 if [[ $? != 0 ]]; then
-    osascript handle_error.scpt
+    osascript "$wfd/handle_error.scpt"
 fi
 </string>
 				<key>scriptargtype</key>
@@ -430,7 +468,8 @@ fi
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>python update.py 2&gt;&gt; error_log.txt</string>
+				<string>wfd=$alfred_preferences/workflows/$alfred_workflow_uid
+python "$wfd/update.py" 2&gt;&gt; "$wfd/error_log.txt"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -493,9 +532,10 @@ end alfred_script</string>
 				<key>runningsubtext</key>
 				<string>Getting folders...</string>
 				<key>script</key>
-				<string>search_notes/search_notes folder "$@" 2&gt;&gt; error_log.txt
+				<string>wfd=$alfred_preferences/workflows/$alfred_workflow_uid
+"$wfd/search_notes/search_notes" folder "$@" 2&gt;&gt; "$wfd/error_log.txt"
 if [[ $? != 0 ]]; then
-    osascript handle_error.scpt
+    osascript "$wfd/handle_error.scpt"
 fi
 </string>
 				<key>scriptargtype</key>
@@ -627,7 +667,7 @@ or create note</string>
 		<key>6740BCB6-6818-49E2-A88A-9D19EA132F08</key>
 		<dict>
 			<key>note</key>
-			<string>⌥ Copy note:// URL</string>
+			<string>⌥ Copy note URL</string>
 			<key>xpos</key>
 			<integer>590</integer>
 			<key>ypos</key>
@@ -680,7 +720,7 @@ or create note</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>3.1.3</string>
+	<string>3.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/sballin/alfred-search-notes-app</string>
 </dict>

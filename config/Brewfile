@@ -16,8 +16,8 @@ cask "bibdesk"
 cask "microsoft-excel"
 cask "microsoft-powerpoint"
 cask "microsoft-word"
-cask "google-chrome"
 cask "mounty"
+cask "raindropio"
 cask "spotify"
 cask "stretchly"
 cask "the-unarchiver"
@@ -34,4 +34,7 @@ mas "Things", id: 904280696
 mas "Tim", id: 1449619230
 mas "Wipr", id: 1320666476
 mas "NordVPN IKE", id: 1116599239
-mas "Instapaper", id: 1481302432
+mas "Instapaper", id: 288545208
+mas "Instapaper Save", id: 1481302432
+mas "Reeder 5.", id: 1529448980
+mas "Horo - Timer for Menu Bar", id:1437226581

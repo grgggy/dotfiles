@@ -17,5 +17,7 @@
 		<key>string</key>
 		<string>C</string>
 	</dict>
+	<key>persistFor</key>
+	<integer>0</integer>
 </dict>
 </plist>

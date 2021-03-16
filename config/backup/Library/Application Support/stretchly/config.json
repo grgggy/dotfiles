@@ -22,7 +22,7 @@
     "breakPostponableDurationPercent": 30,
     "mainColor": "#1D1F21",
     "audio": "crystal-glass",
-    "fullscreen": true,
+    "fullscreen": false,
     "ideas": false,
     "naturalBreaks": true,
     "allScreens": true,
@@ -215,5 +215,8 @@
     "themeSource": "system",
     "endBreakShortcut": "CmdOrCtrl+X",
     "transparentMode": false,
-    "opacity": 0.9
+    "opacity": 0.9,
+    "breakWindowWidth": 0.85,
+    "breakWindowHeight": 0.85,
+    "checkNewVersion": true
 }

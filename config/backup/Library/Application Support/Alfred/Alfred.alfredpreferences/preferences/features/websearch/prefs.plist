@@ -39,7 +39,20 @@
 			<key>text</key>
 			<string>Search CNRTL for synonyms of {query}</string>
 			<key>url</key>
-			<string>http://www.cnrtl.fr/synonymie/{query}</string>
+			<string>https://www.cnrtl.fr/synonymie/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>410729FF-0F71-4DAF-8391-84500A1FAAB1</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ciné</string>
+			<key>text</key>
+			<string>Search SensCritique for '{query}'</string>
+			<key>url</key>
+			<string>https://www.senscritique.com/search?q={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>

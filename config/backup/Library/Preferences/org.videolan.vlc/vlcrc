@@ -1783,7 +1783,7 @@ macosx-continue-playback=1
 [auhal] # HAL AudioUnit output
 
 # Audio volume (integer)
-#auhal-volume=256
+auhal-volume=254
 
 # Last audio device (string)
 auhal-audio-device=0
@@ -3783,7 +3783,7 @@ freetype-bold=1
 #network-synchronisation=0
 
 # Record directory (string)
-input-record-path=/Users/grgggy/Movies
+input-record-path=/Users/gregoiretignol/Movies
 
 # Prefer native stream recording (boolean)
 #input-record-native=1

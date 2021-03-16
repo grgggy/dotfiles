@@ -14,11 +14,11 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+# Disable the sound effects on boot (macOS Big Sur)
+sudo nvram StartupMute=%00
 
-# Set sidebar icon size to medium
-defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
+# Set sidebar icon size to small
+defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
 # Always show scrollbars
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
@@ -72,8 +72,16 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 #sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
 #sudo ln -s /path/to/your/image /System/Library/CoreServices/DefaultDesktop.jpg
 
-# Expand date and time format in menu bar
-defaults write com.apple.menuextra.clock "DateFormat" "EEE d MMM \340  HH:mm:ss"
+# Expand date and time format in menu bar (macOS Big Sur)
+# killall System\ Preferences > /dev/null 2>&1
+# defaults write com.apple.menuextra.clock IsAnalog -bool false
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm:ss"
+# defaults write com.apple.menuextra.clock ShowDayOfWeek -bool true
+# defaults write com.apple.menuextra.clock ShowDayOfMonth -bool true
+# defaults delete -g AppleICUForce12HourTime > /dev/null 2>&1
+# defaults write com.apple.menuextra.clock Show24Hour -bool true
+# defaults write com.apple.menuextra.clock ShowSeconds -bool true
+# killall ControlCenter
 
 # Show battery percentage
   defaults write com.apple.menuextra.battery ShowPercent -string "YES"

@@ -30,11 +30,19 @@
 				<vlc:id>3</vlc:id>
 			</extension>
 		</track>
+		<track>
+			<location>file:///Users/gregoiretignol/Justice%20Der%20-%20Covers%20%5BFull%20Album%5D-mPymRFeTJa4.m4a</location>
+			<duration>10799785</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>4</vlc:id>
+			</extension>
+		</track>
 	</trackList>
 	<extension application="http://www.videolan.org/vlc/playlist/0">
 		<vlc:item tid="0"/>
 		<vlc:item tid="1"/>
 		<vlc:item tid="2"/>
 		<vlc:item tid="3"/>
+		<vlc:item tid="4"/>
 	</extension>
 </playlist>
